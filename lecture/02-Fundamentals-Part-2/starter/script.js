@@ -50,3 +50,17 @@ function fruitProcessor(orang, banana) {
 }
 
 console.log(fruitProcessor(2, 4));
+
+function calcAverage(score1, score2, score3) {
+    const aveScore = (score1 + score2 + score3) / 3;
+    return aveScore;
+}
+
+const scoreDolphins = calcAverage(44, 23, 71);
+const scoreKoalas = calcAverage(65, 54, 49);
+
+if (scoreDolphins > scoreKoalas) {
+    console.log(`Dolphins win (${scoreDolphins}`);
+} else {
+    console.log(`koalas win ${scoreKoalas}`);
+}
