@@ -108,7 +108,7 @@ const ages = [
     calcAge(years1[1]),
     calcAge(years1[years1.length - 1])
 ];
-console.log(ages); */
+console.log(ages); 
 
 // Basic arrays
 
@@ -135,4 +135,20 @@ console.log(friends.includes("bob"));
 
 if (friends.includes("Peter")) {
     console.log("you have a friend called Peter");
+} */
+
+// Assignment
+
+function calcTip(number) {
+    if (number >= 50 && number <= 300) {
+        return number * 0.15;
+    } else {
+        return number * 0.2;
+    }
 }
+const bills = [555];
+
+const tips = [calcTip(bills)];
+
+const total = bills[0] + tips[0];
+console.log(total);
