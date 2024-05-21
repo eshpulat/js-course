@@ -5,7 +5,7 @@ const passTest = true;
 
 if (passTest) hasDriversLicense = true;
 
-if (hasDriversLicense) console.log("i can drive ;D"); */
+if (hasDriversLicense) console.log("i can drive ;D"); 
 
 // function declaration:
 function calcAge1(birthday) {
@@ -108,4 +108,31 @@ const ages = [
     calcAge(years1[1]),
     calcAge(years1[years1.length - 1])
 ];
-console.log(ages);
+console.log(ages); */
+
+// Basic arrays
+
+const friends = ["Michele", "Peter", "John"];
+friends.push("joy");
+console.log(friends);
+
+friends.unshift("john");
+console.log(friends);
+
+friends.pop();
+const poped = friends.pop();
+console.log(poped);
+console.log(friends);
+
+friends.shift();
+console.log(friends);
+
+console.log(friends.indexOf("Peter"));
+console.log(friends.indexOf("bob"));
+
+console.log(friends.includes("Peter"));
+console.log(friends.includes("bob"));
+
+if (friends.includes("Peter")) {
+    console.log("you have a friend called Peter");
+}
