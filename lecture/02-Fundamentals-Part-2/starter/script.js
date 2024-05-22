@@ -135,7 +135,7 @@ console.log(friends.includes("bob"));
 
 if (friends.includes("Peter")) {
     console.log("you have a friend called Peter");
-} */
+} 
 
 // Assignment
 
@@ -151,4 +151,39 @@ const bills = [555];
 const tips = [calcTip(bills)];
 
 const total = bills[0] + tips[0];
-console.log(total);
+console.log(total); */
+
+// object arrays
+
+const jonas = {
+    firstName: "jonas",
+    lastName: "jonatan",
+    age: 2024 - 1999,
+    job: "teacher",
+    friends: ["micheal", "peter", "steven"]
+};
+
+console.log(jonas);
+console.log(jonas.lastName);
+console.log(jonas["lastName"]);
+
+const nameKey = "Name";
+console.log(jonas["first" + nameKey]);
+console.log(jonas["last" + nameKey]);
+
+const interestedIn = prompt(
+    "do you want to know about jonas? Choose between firstName, lastName, age, job, and friends "
+);
+
+if (jonas[interestedIn]) {
+    console.log(jonas[interestedIn]);
+} else {
+    console.log(
+        "wrong request! Choose between firstName, lastName, age, job, and friends"
+    );
+}
+
+jonas.location = "uzbekisatn";
+jonas["instagram"] = "@m.eshpulatov";
+
+console.log(jonas);
