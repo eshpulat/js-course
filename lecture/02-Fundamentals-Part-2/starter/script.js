@@ -151,7 +151,7 @@ const bills = [555];
 const tips = [calcTip(bills)];
 
 const total = bills[0] + tips[0];
-console.log(total); */
+console.log(total); 
 
 // object arrays
 
@@ -186,4 +186,33 @@ if (jonas[interestedIn]) {
 jonas.location = "uzbekisatn";
 jonas["instagram"] = "@m.eshpulatov";
 
-console.log(jonas);
+console.log(jonas); */
+
+// object method
+
+const jonas = {
+    firstName: "jonas",
+    lastName: "jonatan",
+    birthYeah: 1991,
+    job: "teacher",
+    friends: ["micheal", "peter", "steven"],
+    hasDriverLicense: true,
+
+    // calcAge: function (birthYeah) {
+    //     return 2037 - birthYeah;
+    // }
+
+    // calcAge: function () {
+    //     return 2037 - this.birthYeah;
+    // }
+
+    calcAge: function () {
+        this.age = 2037 - this.birthYeah;
+        return this.age;
+    }
+};
+
+console.log(jonas.calcAge());
+console.log(jonas.age);
+console.log(jonas.age);
+console.log(jonas.age);
