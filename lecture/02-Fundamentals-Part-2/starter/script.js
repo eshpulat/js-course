@@ -186,7 +186,7 @@ if (jonas[interestedIn]) {
 jonas.location = "uzbekisatn";
 jonas["instagram"] = "@m.eshpulatov";
 
-console.log(jonas); */
+console.log(jonas); 
 
 // object method
 
@@ -215,4 +215,20 @@ const jonas = {
 console.log(jonas.calcAge());
 console.log(jonas.age);
 console.log(jonas.age);
-console.log(jonas.age);
+console.log(jonas.age); */
+
+// for loop
+
+// console.log("lifting weights repetation 1 😄");
+// console.log("lifting weights repetation 2 😄");
+// console.log("lifting weights repetation 3 😄");
+// console.log("lifting weights repetation 4 😄");
+// console.log("lifting weights repetation 5 😄");
+// console.log("lifting weights repetation 6 😄");
+// console.log("lifting weights repetation 7 😄");
+// console.log("lifting weights repetation 8 😄");
+// console.log("lifting weights repetation 9 😄");
+
+for (let rep = 1; rep <= 10; rep++) {
+    console.log(`"lifting weights repetation ${rep} 😄"`);
+}
