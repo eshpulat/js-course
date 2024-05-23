@@ -215,7 +215,7 @@ const jonas = {
 console.log(jonas.calcAge());
 console.log(jonas.age);
 console.log(jonas.age);
-console.log(jonas.age); */
+console.log(jonas.age); 
 
 // for loop
 
@@ -229,6 +229,33 @@ console.log(jonas.age); */
 // console.log("lifting weights repetation 8 😄");
 // console.log("lifting weights repetation 9 😄");
 
-for (let rep = 1; rep <= 10; rep++) {
-    console.log(`"lifting weights repetation ${rep} 😄"`);
+// for (let rep = 1; rep <= 10; rep++) {
+//     console.log(`"lifting weights repetation ${rep} 😄"`);
+// }
+
+// loops arrays
+
+const jonas = [
+    "jonas",
+    "jonatan",
+    2024 - 1999,
+    "teacher",
+    ["micheal", "peter", "steven"]
+];
+const types = [];
+
+for (let i = 0; i < 5; i++) {
+    console.log(jonas[i]);
+    console.log(jonas[i], typeof jonas[i]);
+
+    types.push(typeof jonas[i]);
 }
+console.log(types);
+
+const years = [1991, 2020, 1989, 2024];
+const age = [];
+
+for (let i = 0; i < years.length; i++) {
+    age.push(2037 - years[i]);
+}
+console.log(age); */
