@@ -258,7 +258,7 @@ const age = [];
 for (let i = 0; i < years.length; i++) {
     age.push(2037 - years[i]);
 }
-console.log(age); */
+console.log(age); 
 
 // loops backwards and loops in loops
 
@@ -280,4 +280,18 @@ for (let exersize = 1; exersize < 4; exersize++) {
     for (let rep = 1; rep < 6; rep++) {
         console.log(`Exercize ${exersize}:lifting Weight repetation ${rep}`);
     }
+} */
+// while loops
+
+// let rep = 1;
+// while (rep <= 10) {
+//     console.log(`"lifting weights repetation ${rep} 😄"`);
+//     rep++;
+// }
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+
+while (dice !== 6) {
+    console.log(`you rolled a ${dice}`);
+    dice = Math.trunc(Math.random() * 6) + 1;
 }
