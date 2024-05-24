@@ -259,3 +259,25 @@ for (let i = 0; i < years.length; i++) {
     age.push(2037 - years[i]);
 }
 console.log(age); */
+
+// loops backwards and loops in loops
+
+const jonas = [
+    "jonas",
+    "jonatan",
+    2024 - 1999,
+    "teacher",
+    ["micheal", "peter", "steven"]
+];
+
+for (let i = jonas.length - 1; i >= 0; i--) {
+    console.log(i, jonas[i]);
+}
+
+for (let exersize = 1; exersize < 4; exersize++) {
+    console.log(`starting exercixe ${exersize}`);
+
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Exercize ${exersize}:lifting Weight repetation ${rep}`);
+    }
+}
